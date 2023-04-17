@@ -1,6 +1,6 @@
 # Modelagem de banco de dados relacional: normalização
 
-Diretrizes informais: 
+<strong>Diretrizes informais:</strong>
 
 - Semântica clara com esquemas fáceis de explicas.
 - Evitar informações redudantes.
@@ -8,7 +8,7 @@ Diretrizes informais:
 - Atenção ao surgimento de tuplas falsas.
 
 
-Anomalias:
+<strong>Anomalias:</strong>
 
 - Anomalias de Inserção.
 - Anomalias de Alteração.
@@ -16,10 +16,10 @@ Anomalias:
 
 
 Dependência Funcional: estabelece uma relação de atributos dentro da tabela.
-Exemplo: CPF &arr; nome
+Exemplo: CPF &rarr; nome
 
 
-Formas normais:
+<h4>Formas normais:</h4>
 
 A primeira forma normal deve satisfazer as propriedades baseadas na dependência funcional.
 
