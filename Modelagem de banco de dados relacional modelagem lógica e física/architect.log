@@ -1,0 +1,25 @@
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+409  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+475  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+475  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+526  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+14864 [Thread-7] ERROR ca.sqlpower.architect.swingui.SwingUIProjectLoader  - Error parsing project file's olap schemas!
+org.xml.sax.SAXParseException; Premature end of file.
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at ca.sqlpower.architect.olap.MondrianXMLReader.parse(MondrianXMLReader.java:103)
+	at ca.sqlpower.architect.swingui.SwingUIProjectLoader.load(SwingUIProjectLoader.java:212)
+	at ca.sqlpower.architect.swingui.action.OpenProjectAction$LoadFileWorker.doStuff(OpenProjectAction.java:218)
+	at ca.sqlpower.swingui.SPSwingWorker.run(SPSwingWorker.java:104)
+	at java.lang.Thread.run(Unknown Source)
+14953 [AWT-EventQueue-0] ERROR ca.sqlpower.architect.swingui.action.OpenProjectAction  - Got exception while opening a project
+ca.sqlpower.sqlobject.SQLObjectException: SAX Exception in project file olap schemas parse!
+	at ca.sqlpower.architect.swingui.SwingUIProjectLoader.load(SwingUIProjectLoader.java:215)
+	at ca.sqlpower.architect.swingui.action.OpenProjectAction$LoadFileWorker.doStuff(OpenProjectAction.java:218)
+	at ca.sqlpower.swingui.SPSwingWorker.run(SPSwingWorker.java:104)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.xml.sax.SAXParseException; Premature end of file.
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at ca.sqlpower.architect.olap.MondrianXMLReader.parse(MondrianXMLReader.java:103)
+	at ca.sqlpower.architect.swingui.SwingUIProjectLoader.load(SwingUIProjectLoader.java:212)
+	... 3 more
+22282 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
