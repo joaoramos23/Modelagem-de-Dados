@@ -1,6 +1,5 @@
-# Modelagem de Dados
-Repositório destinado a exercícios e projetos em Modelagem de Dados.
-
-<strong>Como visualizar os projetos:</strong>
-<br>Para visualizar os projetos basta fazer download do aplivativo BrModelo: http://www.sis4.com/brModelo/download.html
-<br>Para visualizar os projetos basta fazer download do aplivativo SQL Power Architect: https://bestofbi.com/architect-download/
+<h1>Modelagem de Dados</h1>
+<p>Este repositório destina-se a exercícios e projetos em Modelagem de Dados.</p>
+<h2>Como visualizar os projetos:</h2>
+<p>Para visualizar os projetos, basta fazer o download do aplicativo BrModelo: <a href="http://www.sis4.com/brModelo/download.html">http://www.sis4.com/brModelo/download.html</a></p>
+<p>Para visualizar os projetos, basta fazer o download do aplicativo SQL Power Architect: <a href="https://bestofbi.com/architect-download/">https://bestofbi.com/architect-download/</a></p>
