@@ -1,57 +1,46 @@
-# Modelagem de banco de dados relacional: normalização
-
-<strong>Diretrizes informais:</strong>
-
-- Semântica clara com esquemas fáceis de explicas.
-- Evitar informações redudantes.
-- Impossibilitar valores NULL nas tuplas.
-- Atenção ao surgimento de tuplas falsas.
-
-
-<strong>Anomalias:</strong>
-
-- Anomalias de Inserção.
-- Anomalias de Alteração.
-- Anomalias de Remoção.
-
-
-Dependência Funcional: estabelece uma relação de atributos dentro da tabela.
-Exemplo: CPF &rarr; nome
-
-
-<h4>Formas normais:</h4>
-
-A primeira forma normal deve satisfazer as propriedades baseadas na dependência funcional.
-
-- Identificar a chave primária da tabela.
-- Identificar o grupo repetitivo e remove-lo da tabela, criando outra tabela com esse grupo.
-
-
-A segunda forma normal deve satisfazer as propriedades baseadas na dependência funcional parcial.
-
-- Indentificar se a tabela tem chave primária composta.
-- Identificar os atributos que dependem parcialmente dessa chave primária e criar uma nova tabela com eles.
-
-
-A terceira forma normal deve satisfazer as propriedades baseadas na dependência transitiva.
-
-- Identificar todos os atributos que são funcionalmente dependestes de outros atributos não chave e remove-los da tabela, criando outra tabela com esse grupo.
-
-
-A forma normal de Boyce-Codd deve satisfazer as propriedades baseadas na dependência funcional trivial.
-
-- Indeitificar todos os atributos que seja determinado por outro atributo que não seja uma chave candidata.
-- Remove-los e levar para outra tabela.
-
-
-A quarta forma normal deve satisfazer as propriedades baseadas na dependência Multivalorada.
-
-- Identificar se existe um multi determinante que aponte para mais de um multi dependente.
-- Identificar se existe independencia entre esses multi dependentes.
-- Dividindo em duas tabelas e ambas herdando o multi determinante.
-
-A quinta forma normal deve satisfazer as propriedades baseadas na dependência junção.
-
-- Identificar se existe dependência junção.
-- Separar a tabela em 3 outras tabelas de acordo com a dependência junção.
-
+<h1>Modelagem de Banco de Dados Relacional: Normalização</h1>
+<h3>Diretrizes informais:</h3>
+<ul>
+	<li>Semântica clara com esquemas fáceis de explicar.</li>
+	<li>Evitar informações redundantes.</li>
+	<li>Impedir valores NULL nas tuplas.</li>
+	<li>Atenção ao surgimento de tuplas falsas.</li>
+</ul>
+<h3>Anomalias:</h3>
+<ul>
+	<li>Anomalias de Inserção.</li>
+	<li>Anomalias de Alteração.</li>
+	<li>Anomalias de Remoção.</li>
+</ul>
+<p><strong>Dependência Funcional:</strong> estabelece uma relação de atributos dentro da tabela. Exemplo: CPF → nome.</p>
+<h2>Formas normais:</h2>
+<p>A <strong>primeira forma normal</strong> deve satisfazer as propriedades baseadas na dependência funcional.</p>
+<ol>
+	<li>Identificar a chave primária da tabela.</li>
+	<li>Identificar o grupo repetitivo e removê-lo da tabela, criando outra tabela com esse grupo.</li>
+</ol>
+<p>A <strong>segunda forma normal</strong> deve satisfazer as propriedades baseadas na dependência funcional parcial.</p>
+<ol>
+	<li>Identificar se a tabela tem chave primária composta.</li>
+	<li>Identificar os atributos que dependem parcialmente dessa chave primária e criar uma nova tabela com eles.</li>
+</ol>
+<p>A <strong>terceira forma normal</strong> deve satisfazer as propriedades baseadas na dependência transitiva.</p>
+<ol>
+	<li>Identificar todos os atributos que são funcionalmente dependentes de outros atributos não chave e removê-los da tabela, criando outra tabela com esse grupo.</li>
+</ol>
+<p>A <strong>forma normal de Boyce-Codd</strong> deve satisfazer as propriedades baseadas na dependência funcional trivial.</p>
+<ol>
+	<li>Identificar todos os atributos que são determinados por outro atributo que não seja uma chave candidata.</li>
+	<li>Removê-los e levá-los para outra tabela.</li>
+</ol>
+<p>A <strong>quarta forma normal</strong> deve satisfazer as propriedades baseadas na dependência Multivalorada.</p>
+<ol>
+	<li>Identificar se existe um multidentificador que aponte para mais de um multidependente.</li>
+	<li>Identificar se existe independência entre esses multidependentes.</li>
+	<li>Dividir em duas tabelas e ambas herdarem o multidentificador.</li>
+</ol>
+<p>A <strong>quinta forma normal</strong> deve satisfazer as propriedades baseadas na dependência junção.</p>
+<ol>
+	<li>Identificar se existe dependência junção.</li>
+	<li>Separar a tabela em três outras tabelas de acordo com a dependência junção.</li>
+</ol>
